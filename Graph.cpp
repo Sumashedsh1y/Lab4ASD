@@ -61,7 +61,6 @@ int Graph::BFS(int start, int end)
 				f << *r << ",color=red\n";
 				f << v << ",color=blue\n";
 				f << "w,1000\n";
-
 				f << v << ",shape=box,color=yellow,label=" << v << ";dist:" << dlina[v] << "\n";
 			}
 		}
