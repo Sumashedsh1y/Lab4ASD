@@ -36,11 +36,8 @@ int Graph::BFS(int start, int end)
 	priority_queue<Point> q;
 	Point go{ 0,start };
 	q.push(go);
-	visited[start] = true;
-	//q.push(end);
-	//visited[end] = true;
 	while (!q.empty()) {
-		if (visited[q.top().number] && q.top().dlina>0) {
+		if (visited[q.top().number]) {
 			q.pop();
 			continue;
 		}
